@@ -4,7 +4,7 @@ EmojiScript is an AoPS script created by <a href='https://artofproblemsolving.co
 
 ## Installation
 
-There are only two things you need to use EmojiScript
+There are only two things you need to use EmojiScript:
 1. Install either <a href='https://www.tampermonkey.net/' target='_blank'>Tampermonkey</a> or <a href='https://violentmonkey.github.io/get-it/' target='_blank'>Violentmonkey</a>
 2. Click <a href="../../raw/main/script.user.js">here</a>.
 
@@ -28,7 +28,7 @@ Then, click "create". Click the button to view raw:
   <img width="600" src="https://i.imgur.com/5hyNUXW.png">
 </p>
 
-It will open a new tab with your JSON. Copy the URL, and open up the userscript. You can do this by clicking on the userscript » Click Dashboard » EmojiUserscript » replace the text inside the quotes:
+It will open a new tab with your JSON. Copy the URL, and open up the userscript. You can do this by clicking on the userscript » Click Dashboard » EmojiScript » replace the text inside the quotes:
 
 ```
   const emoji_json_url =
@@ -37,3 +37,7 @@ It will open a new tab with your JSON. Copy the URL, and open up the userscript.
 
 with your pastebin.pl URL. 
 
+## Bugs
+Although we have tried our best to look out for bugs, we still make mistakes. Please report your bug by
+
+- Sending a AoPS PM to <a href='https://artofproblemsolving.com/community/user/546163' target='_blank'>forester2015</a> or <a href='https://artofproblemsolving.com/community/user/539447' target='_blank'>Wukong</a>
