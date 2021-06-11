@@ -10,9 +10,11 @@ There are only two things you need to use EmojiScript:
 
 ## Custom Emojis
 
-Be sure you have the userscript installed, before adding custom emojis.
+Be sure you have the userscript installed before adding custom emojis.
 
-To get custom emojis, go <a href='https://pastebin.pl/' target='_blank'>here</a> and type in your custom emojis. They must be in a **valid** JSON format. The key should be the emoji short-hand, like `:pog:`. The value should be the image URL to the corresponding key. For example, `":pog:" : "https://i.imgur.com/xtwJIzL.png"` is a valid key-value pair.
+Now, EmojiScript already comes premade with many emojis that are available to use without having to do anything! You can even suggest for more to be added by filling out the <a href="https://forms.gle/KWbqeHSixazhfXEe7">Google Form</a>. However, if you just want your own set, that's okay too.
+
+To get your own custom emojis, go <a href='https://pastebin.pl/' target='_blank'>here</a> and type in your custom emojis. They must be in a **valid** JSON format. The key should be the emoji short-hand, like `:pog:`. The value should be the image URL to the corresponding key. For example, `":pog:" : "https://i.imgur.com/xtwJIzL.png"` is a valid key-value pair.
 
 Here are some tips:
 
