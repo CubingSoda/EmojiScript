@@ -83,7 +83,7 @@
           var post_content = $(".cmty-post-textarea")[index].value;
           $(".cmty-post-textarea")[index].value = post_content.replaceAll(
             prop,
-            ` [img width=4]${shortcuts[prop]}[/img] `
+            ` [img width=2]${shortcuts[prop]}[/img] `
           );
         }
       });
