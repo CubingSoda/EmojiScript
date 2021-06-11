@@ -19,9 +19,8 @@
   const emoji_json_url =
     "https://raw.githubusercontent.com/EmojiScript/main/main/emoji-list.json";
 
-  String.prototype.cleanup = function () {
-    // converts string to numrtov values, all tied together
-
+  String.prototype.convert_to_numeric = function () {
+    // converts string to numeric values, all tied together
     returned_string = "";
 
     for (const char of this) {
@@ -76,7 +75,7 @@
             const value = emojis[key];
             smiley_holders[
               i
-            ].innerHTML += `<img src="${value}" id="${key.cleanup()}" style="cursor: pointer; margin: 4px;">`;
+            ].innerHTML += `<img src="${value}" id="${key.convert_to_numeric()}" style="cursor: pointer; margin: 4px;">`;
           }
 
           // indication to show that it has completed
@@ -88,7 +87,7 @@
           // console.log(keys);
           keys.forEach((x) => {
             document
-              .querySelector(`#${x.cleanup()}`)
+              .querySelector(`#${x.convert_to_numeric()}`)
               .addEventListener("click", function () {
                 emoji_click(x);
               });
