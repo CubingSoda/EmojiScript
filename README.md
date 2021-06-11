@@ -4,4 +4,4 @@ EmojiScript is an AoPS script created by forester2015 (with help from Wukong) in
 ## Installation
 There are only two things you need to use EmojiScript
 1. Install [Tampermonkey](https://www.tampermonkey.net/) (ViolentMonkey works too)
-2. Click <a href="../../main/script.user.js">here</a>.
+2. Click <a href="../../raw/main/script.user.js">here</a>.
