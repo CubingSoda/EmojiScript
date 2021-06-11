@@ -82,18 +82,17 @@
 	":football:" : "/assets/images/smilies/football.gif",
 	":furious:" : "/assets/images/smilies/furious.gif",
 	":gathering:" : "/assets/images/smilies/gathering.gif",
-	":gleam:" : "/assets/images/smilies/gleam.gif"
-	":harhar:" : "/assets/images/smilies/harhar.gif"
-	":help:" : "/assets/images/smilies/helpsmilie.gif"
-	":icecream:" : "/assets/images/smilies/icecream.gif"
-	":juggle:" : "/assets/images/smilies/juggle[1].gif"
-	":jump:" : "/assets/images/smilies/jump.gif"
-	":moose:" : "/assets/images/smilies/mf_moose.gif"
-	":nhl:" : "/assets/images/smilies/nhl.gif"
-	":noo:" : "/assets/images/smilies/no.gif"
-	":omighty:" : "/assets/images/smilies/notworthy.gif"
-	":yoda:" : "/assets/images/smilies/yoda.gif"
-
+	":gleam:" : "/assets/images/smilies/gleam.gif",
+	":harhar:" : "/assets/images/smilies/harhar.gif",
+	":help:" : "/assets/images/smilies/helpsmilie.gif",
+	":icecream:" : "/assets/images/smilies/icecream.gif",
+	":juggle:" : "/assets/images/smilies/juggle[1].gif",
+	":jump:" : "/assets/images/smilies/jump.gif",
+	":moose:" : "/assets/images/smilies/mf_moose.gif",
+	":nhl:" : "/assets/images/smilies/nhl.gif",
+	":noo:" : "/assets/images/smilies/no.gif",
+	":omighty:" : "/assets/images/smilies/notworthy.gif",
+	":yoda:" : "/assets/images/smilies/yoda.gif",
 	":thonk:" : "https://cdn.artofproblemsolving.com/attachments/8/2/84be93d430a56ab8cae0e0e0265be8477cb470.png",
 	":pog:" : "https://cdn.artofproblemsolving.com/images/2/6/6/266faa1f3690627831fffeb420368d5372fa1100.png",
 	":vibin:" : "https://cdn.artofproblemsolving.com/images/8/3/8/838978d763cfc1b4c7a3dbe14ac36447dbfb7dab.gif",
