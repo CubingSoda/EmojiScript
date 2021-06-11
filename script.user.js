@@ -20,34 +20,15 @@
     "https://raw.githubusercontent.com/EmojiScript/main/main/emoji-list.json";
 
   String.prototype.cleanup = function () {
-    if (
-      this.replaceAll(":", "-")
-        .replaceAll(";", "---")
-        .replaceAll("(", "---")
-        .replaceAll(")", "---")
-        .replaceAll("!", "---")
-        .replaceAll("|", "---")
-        .replaceAll("?", "---")[0] == "-"
-    ) {
-      return (
-        "AAAA" +
-        this.replaceAll(":", "-")
-          .replaceAll(";", "---")
-          .replaceAll("(", "---")
-          .replaceAll(")", "---")
-          .replaceAll("!", "---")
-          .replaceAll("|", "---")
-          .replaceAll("?", "---")
-      );
-    } else {
-      return this.replaceAll(":", "-")
-        .replaceAll(";", "---")
-        .replaceAll("(", "---")
-        .replaceAll(")", "---")
-        .replaceAll("!", "---")
-        .replaceAll("|", "---")
-        .replaceAll("?", "---");
+    // converts string to numrtov values, all tied together
+
+    returned_string = "";
+
+    for (const char of this) {
+      returned_string += char.charCodeAt(0);
     }
+
+    return "emoji-" + returned_string;
   };
 
   function submit(shortcuts) {
