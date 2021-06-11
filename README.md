@@ -3,6 +3,6 @@ EmojiScript is an AoPS script created by forester2015 (with help from Wukong) in
 
 ## Installation
 There are only two things you need to use EmojiScript
-1. Install either <a href='https://violentmonkey.github.io/get-it/'>Violentmonkey</a> or <a href='https://www.tampermonkey.net/'>Tampermonkey</a>
+1. Install either <a href='https://www.tampermonkey.net/'>Tampermonkey</a> or <a href='https://violentmonkey.github.io/get-it/'>Violentmonkey</a>
 2. Click <a href="../../raw/main/script.user.js">here</a>.
 
