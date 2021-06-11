@@ -6,7 +6,7 @@ EmojiScript is an AoPS script created by <a href='https://artofproblemsolving.co
 
 There are only two things you need to use EmojiScript:
 1. Install either <a href='https://www.tampermonkey.net/' target='_blank'>Tampermonkey</a> or <a href='https://violentmonkey.github.io/get-it/' target='_blank'>Violentmonkey</a>
-2. Click <a href="../../raw/main/script.user.js">here</a>.
+2. Click <a href="../../raw/main/script.user.js">here</a>
 
 ## Custom Emojis
 
@@ -30,7 +30,7 @@ Then, click "create". Click the button to view raw:
   <img width="600" src="https://i.imgur.com/5hyNUXW.png">
 </p>
 
-It will open a new tab with your JSON. Copy the URL, and open up the userscript. You can do this by clicking on the userscript » Click Dashboard » EmojiScript » replace the text inside the quotes:
+It will open a new tab with your JSON. Copy the URL, and open up the userscript. You can do this by clicking on the userscript » click "dashboard" » click "EmojiScript" » replace the text inside the quotes:
 
 ```
   const emoji_json_url =
