@@ -12,14 +12,14 @@ There are only two things you need to use EmojiScript:
 
 Be sure you have the userscript installed, before adding custom emojis.
 
-To get custom emojis, go <a href='https://pastebin.pl/' target='_blank'>here</a> and type in your custom emojis. They must be in a **valid** JSON format. The key should be the emoji short-hand, like `:pog:`. The value should be the image URL to the corrsponding key. For exmaple, `":pog:" : "https://i.imgur.com/xtwJIzL.png"` is a valid key value pair.
+To get custom emojis, go <a href='https://pastebin.pl/' target='_blank'>here</a> and type in your custom emojis. They must be in a **valid** JSON format. The key should be the emoji short-hand, like `:pog:`. The value should be the image URL to the corresponding key. For example, `":pog:" : "https://i.imgur.com/xtwJIzL.png"` is a valid key-value pair.
 
 Here are some tips:
 
-- Wrap your key value pair in curly braces {}
+- Wrap your key-value pair in curly braces {}
 - Use **double** quotes; single quotes don't work!
-- Seperate your key and value with a colon
-- End each key value pair with a comma
+- Separate your key and value with a colon
+- End each key-value pair with a comma
 - Don't put a comma on the last line
 
 Then, click "create". Click the button to view raw:
