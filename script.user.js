@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EmojiScript
 // @namespace    https://emojiscript.github.io/
-// @version      1.0
+// @version      1.0.1
 // @description  A Better List of Emojis
 // @author       forester2015/coding-bot-1 & Wukong/KindaBadCoder
 // @match        https://artofproblemsolving.com/*
