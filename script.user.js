@@ -75,7 +75,7 @@
             const value = emojis[key];
             smiley_holders[
               i
-            ].innerHTML += `<img src="${value}" id="${key.convert_to_numeric()}" style="cursor: pointer; margin: 4px;">`;
+            ].innerHTML += `<img src="${value}" id="${key.convert_to_numeric()}" style="cursor: pointer; margin: 2px;">`;
           }
 
           // indication to show that it has completed
