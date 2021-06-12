@@ -30,15 +30,38 @@
     return "emoji-" + returned_string;
   };
 
+  HTMLTextAreaElement.prototype.insertAtCaret = function (text) {
+    text = text || "";
+    if (document.selection) {
+      // IE
+      this.focus();
+      var sel = document.selection.createRange();
+      sel.text = text;
+    } else if (this.selectionStart || this.selectionStart === 0) {
+      // Others
+      var startPos = this.selectionStart;
+      var endPos = this.selectionEnd;
+      this.value =
+        this.value.substring(0, startPos) +
+        text +
+        this.value.substring(endPos, this.value.length);
+      this.selectionStart = startPos + text.length;
+      this.selectionEnd = startPos + text.length;
+    } else {
+      this.value += text;
+    }
+  };
+
   function submit(shortcuts) {
     if ($(".cmty-posting-environ-buttons > input").length) {
       $(".cmty-posting-environ-buttons > input")[1].onfocus = function () {
         $(".cmty-post-textarea").each(function (index) {
           for (var prop in shortcuts) {
             var post_content = $(".cmty-post-textarea")[index].value;
+
             $(".cmty-post-textarea")[index].value = post_content.replaceAll(
               prop,
-              ` ${shortcuts[prop]} `
+              ` [img]${shortcuts[prop]}[/img] `
             );
           }
         });
@@ -49,8 +72,8 @@
   function emoji_click(shortcut) {
     const textarea_divs = document.querySelectorAll(".cmty-post-textarea");
     const current_textarea = textarea_divs[textarea_divs.length - 1];
-    current_textarea.value += ` ${shortcut} `;
-    current_textarea.focus();
+
+    current_textarea.insertAtCaret(` ${shortcut} `);
   }
 
   function update_emojis(emojis) {
