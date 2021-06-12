@@ -50,6 +50,8 @@
     } else {
       this.value += text;
     }
+
+    this.focus();
   };
 
   function submit(shortcuts) {
