@@ -61,7 +61,7 @@
 
             $(".cmty-post-textarea")[index].value = post_content.replaceAll(
               prop,
-              ` [img]${shortcuts[prop]}[/img] `
+              `[img]${shortcuts[prop]}[/img]`
             );
           }
         });
