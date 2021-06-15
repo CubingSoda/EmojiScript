@@ -35,12 +35,12 @@
     if (document.selection) {
       // IE
       this.focus();
-      var sel = document.selection.createRange();
+      const sel = document.selection.createRange();
       sel.text = text;
     } else if (this.selectionStart || this.selectionStart === 0) {
       // Others
-      var startPos = this.selectionStart;
-      var endPos = this.selectionEnd;
+      const startPos = this.selectionStart;
+      const endPos = this.selectionEnd;
       this.value =
         this.value.substring(0, startPos) +
         text +
@@ -58,13 +58,21 @@
     if ($(".cmty-posting-environ-buttons > input").length) {
       $(".cmty-posting-environ-buttons > input")[1].onfocus = function () {
         $(".cmty-post-textarea").each(function (index) {
-          for (var prop in shortcuts) {
-            var post_content = $(".cmty-post-textarea")[index].value;
+          for (const prop in shortcuts) {
+            const post_content = $(".cmty-post-textarea")[index].value;
 
-            $(".cmty-post-textarea")[index].value = post_content.replaceAll(
-              prop,
-              `[img]${shortcuts[prop]}[/img]`
-            );
+            // Special for :o emoji
+            if (prop == ":o") {
+              $(".cmty-post-textarea")[index].value = post_content.replace(
+                /:o(?!mighty:)/g,
+                ` [img]${shortcuts[prop]}[/img] `
+              );
+            } else {
+              $(".cmty-post-textarea")[index].value = post_content.replaceAll(
+                `${prop}`,
+                ` [img]${shortcuts[prop]}[/img] `
+              );
+            }
           }
         });
       };
@@ -96,7 +104,7 @@
           smiley_holders[i].innerHTML = "";
 
           // looop through json
-          for (var key in emojis) {
+          for (const key in emojis) {
             const value = emojis[key];
             smiley_holders[
               i
@@ -109,7 +117,7 @@
           ].innerHTML += `<span style="display:none;">Completed</span>`;
 
           const keys = Object.keys(emojis);
-          // console.log(keys);
+
           keys.forEach((x) => {
             document
               .querySelector(`#${x.convert_to_numeric()}`)
@@ -122,13 +130,17 @@
     }
   }
 
-  const main_interval = async () => {
+  const main = async () => {
     const fetched_data = await fetch(emoji_json_url);
     const emojis = await fetched_data.json();
 
-    update_emojis(emojis);
-    submit(emojis);
+    const main_interval = () => {
+      update_emojis(emojis);
+      submit(emojis);
+    };
+
+    window.onload = setInterval(main_interval, 200);
   };
 
-  window.onload = setInterval(main_interval, 200);
+  main();
 })();
